@@ -1,0 +1,304 @@
+.jumbotron {
+  color: #fff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+@media screen and (max-width: 600px) {
+  .btn-primary {
+    font-size: 1.5em;
+    padding: 10px 20px;
+  }
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/*ANIMATION DES IMAGES AU CHARGEMENT DE LA PAGE*/
+@keyframes animOpacité {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.container img {
+  float: right;
+  margin-left: 20px;
+  height: auto;
+  max-width: 100%;
+  width: 500px;
+  animation: animOpacité 2s ease-in-out;
+}
+
+.chartBox1 {
+  float: left;
+  margin-left: 30px;
+  max-width: 100%; 
+  width: 500px;
+}
+
+.chartBox2 {
+  float: right;
+  margin-left: 70px;
+  max-width: 100%;
+  width: 800px;
+}
+
+.centered-div {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+/*CSS CHIFFRES*/
+
+.table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+/*CSS DE LA BOUTIQUE*/
+
+.cart-button {
+  background-color: #007bff;
+  border-color: #007bff;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.cart-button img {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .cart-button {
+    top: 50px;
+    right: 10px;
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-button {
+    top: 30px;
+    right: 5px;
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-image {
+  width: 100%;
+  height: 250px;
+}
+
+.red-dot {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+/* STYLE DU CV */
+.cv-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.cv-title {
+  color: #343a40;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cv-section-title {
+  color: #343a40;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.cv-item {
+  margin-bottom: 1rem;
+}
+
+.cv-item-title {
+  font-weight: bold;
+}
+
+.cv-item-content {
+  color: #6c757d;
+}
+
+.link-body-emphasis {
+  color: #343a40;
+}
+
+.link-body-emphasis:hover {
+  color: #212529;
+}
+
+/*CSS DU PANIER*/
+
+.panierCyc {
+  position: absolute;
+  top: 150px;
+  left: 550px;
+}
+
+td,th {
+  font-family: monospace;
+  padding: 4px;
+  background-color: #ccc;
+}
+
+label {
+  vertical-align: top;
+}
+
+#main {
+  position: absolute;
+  top: 200px;
+  left: 400px;
+  border: 1px dotted blue;
+  padding: 6px 50px;
+  background-color: #ccc;
+  margin-right: 50%;
+}
+
+#items_table {
+  position: absolute;
+  top: 350px;
+  left: 500px;
+  border: 1px dotted blue;
+  padding: 6px 100px;
+  margin-top: 12px;
+  margin-right: 50%;
+}
+
+#items_table h3 {
+  font-size: 18px;
+  margin-top: 0px;
+  font-family: sans-serif;
+}
+
+/*CSS INSCRIPTIONS*/
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+}
+
+form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="date"], select {
+  width: 100%;
+  padding: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  border: none;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  margin-right: 5px;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input[type="reset"], input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="reset"]:hover, input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/*CSS ARTICLES*/
+
+.container article img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 15px 0;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid #dee2e6;
+}
